@@ -1,11 +1,8 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+// import react from "@vitejs/plugin-react"; // keep if installed
 
 export default defineConfig({
-  plugins: [react()],
-  // 👇 IMPORTANT: repo name as base
-  base: "/JErota/",
-  build: {
-    outDir: "docs" // 👈 so Pages can serve from /docs on main
-  }
+  // plugins: [react()],
+  base: "/JErota/",        // <— IMPORTANT: repo name with slashes
+  build: { outDir: "docs" } // <— Pages serves from /docs
 });
